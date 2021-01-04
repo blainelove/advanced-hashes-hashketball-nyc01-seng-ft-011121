@@ -180,3 +180,14 @@ def player_numbers(team_name)
   end
   return numbs
 end
+
+def num_points_scored(name)
+  data = game_hash
+  data.each do |team, team_hash|
+    team_hash[:players].each do |player_stats|
+      if player_stats[:player_name] == name
+        return player_stats
+      end
+    end
+  end
+end
