@@ -167,3 +167,12 @@ def team_names
   end
   return team_names
 end
+
+def player_numbers
+  data = game_hash
+  numbs = []
+  data.each do |team, team_hash|
+    team_names << team_hash[:team_name]
+  end
+  return team_names
+end
