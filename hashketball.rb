@@ -128,5 +128,9 @@ end
 
 def num_points_scored(name)
   data = game_hash
+  data.each do |dict|
+
+
+
 end
 # Write code here
