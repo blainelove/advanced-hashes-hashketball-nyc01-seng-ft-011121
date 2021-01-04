@@ -153,9 +153,8 @@ end
 def team_colors(team_name)
   data = game_hash
   data.each do |team, team_hash|
-    if team_hash[:team_name] ==
-    team_hash[:colors]
-      end
+    if team_hash[:team_name] == team_name
+      return team_hash[:colors]
     end
   end
 end
