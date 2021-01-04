@@ -134,6 +134,8 @@ def num_points_scored(name)
     dict.each do |team|
       binding.pry
       team[:players]
+    end
+  end
 
 
 
