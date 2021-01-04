@@ -136,8 +136,5 @@ def num_points_scored(name)
       team[:players]
     end
   end
-
-
-
 end
 # Write code here
