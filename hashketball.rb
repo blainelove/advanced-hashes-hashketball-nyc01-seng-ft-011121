@@ -168,11 +168,15 @@ def team_names
   return team_names
 end
 
-def player_numbers
+def player_numbers(team_name)
   data = game_hash
   numbs = []
   data.each do |team, team_hash|
-    team_names << team_hash[:team_name]
+    if team_hash[:team_name] == team_name
+      team_hash[:players].each do |player_stats|
+        numbs << player_stats[:number]
+      end
+    end
   end
-  return team_names
+  return numbs
 end
