@@ -130,10 +130,10 @@ end
 
 def num_points_scored(name)
   data = game_hash
-  data.each do |dict|
-    dict.each do |team|
+  data.each do |team, team_hash|
+    team_hash.each do |keys, values|
       binding.pry
-      team[:players]
+      #values[:players]
     end
   end
 end
