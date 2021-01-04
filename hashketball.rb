@@ -1,4 +1,6 @@
 # Write your code below game_hash
+require pry
+
 def game_hash
   {
     home: {
@@ -129,6 +131,9 @@ end
 def num_points_scored(name)
   data = game_hash
   data.each do |dict|
+    dict.each do |team|
+      binding.pry
+      team[:players]
 
 
 
