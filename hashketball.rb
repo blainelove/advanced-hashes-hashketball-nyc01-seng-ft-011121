@@ -138,7 +138,7 @@ def num_points_scored(name)
     end
   end
 end
-# Write code here
+
 def shoe_size(name)
   data = game_hash
   data.each do |team, team_hash|
