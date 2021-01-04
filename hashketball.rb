@@ -165,4 +165,5 @@ def team_names
   data.each do |team, team_hash|
     team_names << team_hash[:team_name]
   end
+  return team_names
 end
